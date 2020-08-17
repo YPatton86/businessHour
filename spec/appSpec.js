@@ -14,10 +14,10 @@ describe("businessHoursFn", ()=>{
     it("getDayNumber returns undefined", () => {
         expect(businessTime.getDayNumber(367)).toBe(undefined);
     });
-    it("businessHoursDate returns true", () => {
+    it("businessHoursDate returns false", () => {
         expect(businessTime.businessHoursDate(354, 17)).not.toBe();
     });
-    it("businessHoursDate returns false", () => {
+    it("businessHoursDate returns true", () => {
         expect(businessTime.businessHoursDate(23, 10)).toBe(true);
     });
     it("businessHoursDateChallenge returns false", () => {
