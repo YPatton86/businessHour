@@ -1,0 +1,22 @@
+{
+  "name": "businesshour",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/YPatton86/businessHour.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/YPatton86/businessHour/issues"
+  },
+  "homepage": "https://github.com/YPatton86/businessHour#readme",
+  "devDependencies": {
+    "jasmine": "^3.6.1"
+  }
+}
