@@ -4,8 +4,6 @@ business hours is between 9-18 */
 class BusinessHoursFn{
     constructor(janFirstDayNumber){
        this.janFirstDayNumber = janFirstDayNumber;
-       this.dayNumber = null;
-       this.date; 
     }
     //Part 1
     businessHours(dayNumber, hourNumber) {
@@ -20,14 +18,14 @@ class BusinessHoursFn{
     };
     //Part3
     businessHoursDate(yearDayNumber, hourNumber) {
-        this.dayNumber = this.getDayNumber(this.janFirstDayNumber, yearDayNumber);
-        return this.businessHours(this.dayNumber, hourNumber);
+        const dayNumber = this.getDayNumber(this.janFirstDayNumber, yearDayNumber);
+        return this.businessHours(dayNumber, hourNumber);
     };
     //Challenge
     //E.g. January 24 2019 at 10 => "2019-1-25-10:00",  Dec 21 Sat 2019 at 5 pm  => "2019-1-15-10:00"
     businessHoursDateChallenge(dateString) {
-        this.date = new Date(dateString);
-        return this.businessHours(this.date.getDay(), this.date.getHours());
+        const date = new Date(dateString);
+        return this.businessHours(date.getDay(), date.getHours());
     };    
 }
 
